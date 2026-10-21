@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Starterly Support & Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow reading column; a quiet header band with the app name, then two anchored sections (support, privacy). */
+:root {
+  --bg: #f7f5f1;
+  --surface: #ffffff;
+  --fg: #2a2420;
+  --muted: #6c625a;
+  --line: #e4ddd4;
+  --accent: #a8521f;
+  --font-display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --font-body: "Source Sans 3", -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1815; --surface: #24201c; --fg: #f1ebe4; --muted: #b3a89c; --line: #3a332c; --accent: #e8955a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1815; --surface: #24201c; --fg: #f1ebe4; --muted: #b3a89c; --line: #3a332c; --accent: #e8955a;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 var(--font-body);
+}
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 36px;
+}
+header { display: grid; gap: 6px; }
+.eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(34px, 7vw, 46px); font-weight: 800; line-height: 1.05; }
+h1 span { color: var(--accent); }
+.lead { color: var(--muted); margin: 0; }
+section { display: grid; gap: 12px; }
+h2 { font-size: 26px; font-weight: 800; padding-top: 8px; border-top: 1px solid var(--line); }
+h3 { font-size: 18px; font-weight: 600; margin-top: 8px; }
+p { margin: 0; }
+.contact {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.contact code { font: 600 18px/1.3 var(--font-body); user-select: all; word-break: break-all; min-width: 0; flex: 1 1 220px; }
+button {
+  font: 600 15px var(--font-body);
+  background: var(--accent);
+  color: var(--bg);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
+.meta { color: var(--muted); font-size: 15px; }
+footer { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Sourdough starter tracker for iPhone</div>
+    <h1>Starter<span>ly</span></h1>
+    <p class="lead">Help and privacy information for the Starterly app.</p>
+  </header>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, feedback or a problem with the app? Write an email. We usually answer within two working days.</p>
+    <div class="contact">
+      <code id="email">jonas.volk89@gmail.com</code>
+      <button id="copy" type="button">Copy address</button>
+    </div>
+    <h3>Restore a purchase</h3>
+    <p>On a new iPhone, open Starterly, go to Settings and tap "Restore purchases". You need to be signed in with the same Apple ID you used for the purchase.</p>
+    <h3>Manage or cancel a subscription</h3>
+    <p>Subscriptions are handled by Apple. Open the Settings app on your iPhone, tap your name, then Subscriptions. Cancel at least 24 hours before the end of the current period to avoid renewal.</p>
+    <h3>My starter peaks at a different time than predicted</h3>
+    <p>Log the peak with "It peaked" after each feeding and note the room temperature. After a few feedings Starterly adjusts its predictions to your starter.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="meta">Last updated: October 21, 2026</p>
+    <p>Starterly ("the app") is developed by Jonas Volk. This policy explains what happens with your data when you use the app.</p>
+    <h3>No data collection</h3>
+    <p>Starterly does not collect, transmit, sell or share any personal data. The app has no user accounts, no analytics, no advertising and no third-party tracking.</p>
+    <h3>Data stored on your device</h3>
+    <p>Everything you enter (starters, feedings, temperatures, notes and bake plans) is stored only on your device. If you use iCloud device backups, this data may be included in your backup under Apple's privacy policy. Deleting the app deletes all of its data.</p>
+    <h3>Notifications</h3>
+    <p>If you allow notifications, reminders are scheduled locally on your device. No notification data leaves your device.</p>
+    <h3>Purchases</h3>
+    <p>Purchases and subscriptions are processed by Apple through the App Store. We do not receive your payment information. Apple shares only anonymous, aggregated sales information with developers.</p>
+    <h3>Children</h3>
+    <p>The app does not knowingly collect any information from anyone, including children under 13.</p>
+    <h3>Changes</h3>
+    <p>If this policy changes, the updated version will be published on this page with a new date.</p>
+    <h3>Contact</h3>
+    <p>Questions about this policy: <a href="mailto:jonas.volk89@gmail.com">jonas.volk89@gmail.com</a></p>
+  </section>
+
+  <footer>Starterly · Terms of use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(label) { btn.textContent = label; setTimeout(function () { btn.textContent = 'Copy address'; }, 1800); }
+  try {
+    navigator.clipboard.writeText(text).then(function () { done('Copied'); }, function () { selectEmail(); done('Selected'); });
+  } catch (e) { selectEmail(); done('Selected'); }
+  function selectEmail() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+});
+</script>
+</body>
+</html>
